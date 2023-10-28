@@ -1,6 +1,6 @@
 // VARIABLES --> cajas que guardan algo
 
-// let - const
+// let - const - var
 
 // console.log( edad )
 

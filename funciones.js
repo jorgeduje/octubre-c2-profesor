@@ -4,6 +4,7 @@ let nombre = "pepito";
 
 console.log(nombre);
 
+// DECLARADAS --> tienen nombre
 function f1() {
   // BLOQUE
   let edad = 30;
@@ -40,13 +41,48 @@ console.log(res2)
 
 
 function mostrarNumero (num1 = 0 , num2 = 0){
-   return num1 + num2
+  return num1 + num2
 }
-
 let res = mostrarNumero(5, 9)
 console.log( res )
 
-// SCOPE
+
+// EXPRESADA COMUN -- EXPRESADA ARROW FUNCTION --> ANONIMAS
+
+// COMUN 
+
+let restar = function (n1, n2) {
+  return n1 - n2
+}
+
+let resultadoResta = restar(10, 5)
+console.log(resultadoResta)
+
+// arrow function 
+
+let multiplicar =  numero => numero * 10
+
+let resMulti = multiplicar(4)
+console.log(resMulti)
+
 // HOISTING
 
-// EXPRESADA COMUN -- EXPRESADA ARROW FUNCTION
+
+// SCOPE ---> alcance que tienen las variables 
+// let y const ---> scope local
+
+
+
+let sonido = "guauuu"
+
+
+let decirSonido = ()=>{
+
+  let sonido = "miauuu"
+  console.log(sonido)
+}
+
+decirSonido()
+
+
+
