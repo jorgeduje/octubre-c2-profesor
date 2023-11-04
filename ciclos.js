@@ -26,16 +26,36 @@ const sumatoria = () => {
     //  acumulador += i
     // acumulador  = acumulador + i
 
-    if( i % 2 === 0 ){
-        acumulador += i;
+    if (i % 2 === 0) {
+      acumulador += i;
     }
-
-
   }
 
   return acumulador;
-
 };
 
 let x = sumatoria();
 console.log(x);
+
+const probandoWhile = () => {
+  let i = 1;
+
+  // while(i <= 10){
+  //   // bloque de codigo
+  //   console.log(i)
+
+  //   i++
+  // }
+
+  do{
+    // bloque de codigo
+    console.log(i);
+
+    i++;
+  }while (i <= 10)
+
+  
+
+};
+console.log("------");
+probandoWhile();
