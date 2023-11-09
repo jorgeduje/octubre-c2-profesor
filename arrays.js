@@ -83,3 +83,55 @@ console.log(totalOctubre)
 
 let totalNoviembre = calcularTotal(ventasNoviembre)
 console.log(totalNoviembre)
+
+
+/* TODO :
+A partir de un array de correos, recorrerlo para corroborar si son válidos. 
+Para ello, por el momento, debemos buscar el carácter “@” en cada elemento y 
+agregar aquellos que lo tengan al array de correos admitidos.
+En caso de no encontrar el carácter, se deberá agregar al array de correos descartados.
+Desarrollar una función que realice la verificación de cada elemento del array 
+de correos pendientes. En caso de validar, agregar al arrayCorreoAdmitidos. Caso contrario, 
+agregar al arrayCorreoDescartados (vaciar el array de correos pendientes).
+Mostrar por pantalla la cantidad y los elementos de cada array.
+*/
+
+// PARA SER VALIDO DEBE CONTENER UN @
+let arrayCorreosPendientes = [
+"iroman@digitalhouse.com",
+"loki%digitalhouse.com",
+"loki@digitalhouse.com",
+"thanosdigitalhouse.com",
+"thanos@digitalhouse.com",
+];
+
+// array de correos admitidos
+let arrayCorreosAdmitidos = [
+
+];
+
+// array de correos descartados
+
+let arrayCorreosDescartados = [
+
+];
+
+const verificadorDeCorreos = ( array )=>{
+
+    for( let i = 0; i < array.length; i++ ){
+        if( array[i].includes("@") ){
+            arrayCorreosAdmitidos.push( array[i] )
+        }else{
+            arrayCorreosDescartados.push( array[i] )
+        }
+    }
+
+    arrayCorreosPendientes = []
+
+}
+
+verificadorDeCorreos(arrayCorreosPendientes)
+
+console.log(arrayCorreosPendientes) // []
+console.log(arrayCorreosAdmitidos) // [3]
+console.log(arrayCorreosDescartados) // [2]
